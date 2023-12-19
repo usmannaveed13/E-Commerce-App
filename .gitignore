@@ -27,5 +27,8 @@ frontend/build
 uploads/*png
 uploads/*jpg
 
+# eslint cache
+.eslintcache
+
 # API tests
 http
