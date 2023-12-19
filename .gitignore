@@ -26,6 +26,8 @@ yarn-error.log*
 frontend/build
 uploads/*png
 uploads/*jpg
+frontend/node_modules
+
 
 # eslint cache
 .eslintcache
