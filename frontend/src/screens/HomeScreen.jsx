@@ -2,6 +2,8 @@ import React from 'react'
 import {Row, Col} from 'react-bootstrap'
 import Product from '../components/Product';
 import { useGetProductsQuery } from '../slices/productSlice';
+import Loader from '../components/Loader';
+import Message from '../components/Message';
 
 const HomeScreen = () => {
 
@@ -10,9 +12,11 @@ const HomeScreen = () => {
   return (
     <>
     {isLoading ? (
-        <div>Loading...</div>
+          <Loader />
       ) : error ? (
-        <div>{error?.data.message || error.error}</div>
+        <Message variant='danger'>
+          {error?.data?.message || error.error}
+        </Message>
       ) : (
         <>
           <h1>Latest Products</h1>
