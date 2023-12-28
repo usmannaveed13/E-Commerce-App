@@ -14,6 +14,7 @@ import './assets/styles/bootstrap.custom.css'
 import './assets/styles/index.css';
 import reportWebVitals from './reportWebVitals';
 import { App } from './App';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen';
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
       <Route path='' element={<PrivateRoute />}>
         <Route path='/shipping' element={<ShippingScreen />} />
         <Route path='/payment' element={<PaymentScreen />} />
+        <Route path='/placeorder' element={<PlaceOrderScreen />} />
       </Route>
     </Route>
   )
