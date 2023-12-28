@@ -82,3 +82,5 @@ const ShippingScreen = () => {
     </FormContainer>
   );
 };
+
+export default ShippingScreen;
